@@ -33,14 +33,7 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.jiayou{
-  color: #1677ff;
+.input{
+  margin: 10px auto;
+  padding: 10px;
 }
