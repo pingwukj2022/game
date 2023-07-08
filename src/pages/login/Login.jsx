@@ -1,5 +1,6 @@
 import "./login.css";
 import viteLogo from "/vite.svg";
+import yanzhengma from "/yanzhengma.jpg";
 import { Button, Form, Input } from "antd";
 // import { ForwardOutlined } from "@ant-design/icons";
 
@@ -10,11 +11,14 @@ function Login() {
 
   return (
     <>
-      <div className="title">
-        <a href="###" target="" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>{" "}
-        <h1>Game管理后台系统</h1>
+      <div className="main">
+        <div className="title">
+          <a href="###" target="" rel="noreferrer">
+            <img src={viteLogo} className="logo" alt="Vite logo" />
+          </a>{" "}
+          <h1 className="name_h">Game管理后台系统</h1>
+        </div>
+
         <Form className="form" layout="vertical" onFinish={onFinish}>
           <Form.Item
             label="用户名"
@@ -47,6 +51,25 @@ function Login() {
               size="large"
               placeholder="请输入密码"
             />
+          </Form.Item>
+          <Form.Item
+            label="验证码"
+            name="check"
+            rules={[
+              {
+                required: true,
+                message: "验证码不能为空",
+              },
+            ]}
+          >
+            <div className="check">
+              <Input
+                className="input"
+                size="large"
+                placeholder="请输入验证码"
+              />
+              <img className="yanzhengma" src={yanzhengma} alt="动态验证码" />
+            </div>
           </Form.Item>
           <Form.Item>
             <Button type="primary" htmlType="submit" block size="large">

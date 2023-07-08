@@ -3,6 +3,29 @@
   margin: 0 auto;
   
 }
+.main{
+  display: flex;
+  flex-direction: column;
+}
 .title{
-   text-align: center; 
+   text-align: center;
+   margin: 60px 0 20px 0; 
+}
+.logo{
+  width: 68px;
+}
+.name_h{
+  font-size: 34px;
+}
+.check{
+  display: flex;
+}
+.yanzhengma{
+  width: 88px;
+  border-radius: 8px;
+  border: #d0d0d0 1px solid;
+  cursor: pointer;
+  padding: 0 15px;
+  line-height: 1;
+  margin-left: 10px;
 }
