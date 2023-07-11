@@ -1,3 +1,122 @@
-body{
-  background-color: #fafafa;
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-radius: 15px 15px 0 0;
+  border-top: #ededed 1px solid;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  padding: 5px 0;
+}
+
+.bottom_avatar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px 12px;
+  margin-left: 10px;
+}
+
+.u_name {
+  margin: 0;
+}
+
+.right_icon {
+  margin-left: 3px;
+}
+
+.q_tips {
+  font-size: 12px;
+  color: #999;
+}
+
+.q_tips:hover {
+  color: #000;
+  transition: 0.3s;
+}
+
+.bottom_avatar:hover {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+}
+
+.bottom_avatar:active {
+  background-color: #ebebeb;
+}
+
+.avatar_right {
+  margin-left: 10px;
+}
+
+.bottom_label {
+  display: flex;
+  padding: 8px 22px;
+}
+
+.bottom_label li {
+  margin: 0 10px;
+  padding: 6px 15px;
+  border-radius: 116px;
+  cursor: pointer;
+}
+
+.moren {
+  color: #666;
+}
+
+.moren:hover {
+  transition: 0.3s;
+  background-color: #f5f5f5;
+}
+
+.gailan {
+  color: #fff;
+  background-color: #08d572;
+}
+
+.tt {
+  margin-left: 5px;
+}
+
+.gailan:hover {
+  background-color: #0ae87c;
+}
+
+.gailan:active {
+  background-color: #08d572;
+}
+
+
+.bottom_right {
+  margin-right: 5px;
+  padding: 5px 15px;
+  color: #999;
+  display: flex;
+  align-items: center;
+}
+
+.tc_text {
+  margin-left: 5px;
+  font-size: 14px;
+}
+.bottom_right:hover{
+  color: #ef4343;
+  cursor: pointer;
+}
+.bottom_right:active{
+  color: #ef6e6e;
 }

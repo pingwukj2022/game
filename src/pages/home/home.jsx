@@ -1,105 +1,68 @@
 import "./home.css";
 // import viteLogo from "/vite.svg";
-import { Layout, Menu, theme } from "antd";
+import { Avatar } from "antd";
 import {
-  AppstoreOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  ShopOutlined,
-  TeamOutlined,
-  UploadOutlined,
+  SmileFilled,
+  SignalFilled,
+  SettingFilled,
+  MessageFilled,
+  FolderFilled,
+  ContactsFilled,
+  FormOutlined,
+  PoweroffOutlined,
   UserOutlined,
-  VideoCameraOutlined,
 } from "@ant-design/icons";
-import React from 'react';
 
-const { Header, Content, Footer, Sider } = Layout;
-const items = [
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
-  BarChartOutlined,
-  CloudOutlined,
-  AppstoreOutlined,
-  TeamOutlined,
-  ShopOutlined,
-].map((icon, index) => ({
-  key: String(index + 1),
-  icon: React.createElement(icon),
-  label: `个人中心 ${index + 1}`,
-}));
+// const url = viteLogo;
 function Home() {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
   return (
-  <>
-   <Layout hasSider>
-      <Sider
-        style={{
-          overflow: 'auto',
-          height: '100vh',
-          position: 'fixed',
-          left: 0,
-          top: 0,
-          bottom: 0,
-        }}
-      >
-        <div className="demo-logo-vertical" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']} items={items} />
-      </Sider>
-      <Layout
-        className="site-layout"
-        style={{
-          marginLeft: 200,
-        }}
-      >
-        <Header
-          style={{
-            padding: 0,
-            background: colorBgContainer,
-          }}
-        />
-        <Content
-          style={{
-            margin: '24px 16px 0',
-            overflow: 'initial',
-          }}
-        >
-          <div
-            style={{
-              padding: 24,
-              textAlign: 'center',
-              background: colorBgContainer,
-            }}
-          >
-            <p>long content</p>
-            {
-              // indicates very long content
-              Array.from(
-                {
-                  length: 10,
-                },
-                (_, index) => (
-                  <React.Fragment key={index}>
-                    {index % 4 === 0 && index ? '更多' : '...'}
-                    <br />
-                  </React.Fragment>
-                ),
-              )
-            }
+    <>
+      <div className="home_a">
+        <div className="bottom">
+          <div className="bottom_avatar">
+    
+            <Avatar shape="square" size="large" className="avatar_left" icon={<UserOutlined />} />
+            <div className="avatar_right">
+              <h3 className="u_name">admin</h3>
+              <span className="q_tips">
+                点击编辑资料 
+                 <FormOutlined className="right_icon" />
+              </span>
+            </div>
           </div>
-        </Content>
-        <Footer
-          style={{
-            textAlign: 'center',
-          }}
-        >
-          Game管理后台系统 ©2023 平芜科技所有
-        </Footer>
-      </Layout>
-    </Layout>
-  </>
-  ) 
+          <ul className="bottom_label">
+            <li className="gailan moren">
+              <SmileFilled />
+              <span className="tt">概览</span>
+            </li>
+            <li className="moren">
+              <SignalFilled />
+              <span className="tt">数据</span>
+            </li>
+            <li className="moren">
+              <ContactsFilled />
+              <span className="tt">用户</span>
+            </li>
+            <li className="moren">
+              <FolderFilled />
+              <span className="tt">资料</span>
+            </li>
+            <li className="moren">
+              <MessageFilled />
+              <span className="tt">信息</span>
+            </li>
+            <li className="moren">
+              <SettingFilled />
+              <span className="tt">设置</span>
+            </li>
+          </ul>
+          <div className="bottom_right">
+            <PoweroffOutlined />
+            <span className="tc_text">退出</span>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 export default Home;
