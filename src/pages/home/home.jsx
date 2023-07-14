@@ -1,6 +1,6 @@
 import "./home.css";
 // import viteLogo from "/vite.svg";
-import { Avatar } from "antd";
+import { Avatar, Input, Badge } from "antd";
 import {
   SmileFilled,
   SignalFilled,
@@ -12,7 +12,8 @@ import {
   PoweroffOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-
+const { Search } = Input;
+const onSearch = (value) => console.log(value);
 // const url = viteLogo;
 function Home() {
   return (
@@ -20,13 +21,17 @@ function Home() {
       <div className="home_a">
         <div className="bottom">
           <div className="bottom_avatar">
-    
-            <Avatar shape="square" size="large" className="avatar_left" icon={<UserOutlined />} />
+            <Avatar
+              shape="square"
+              size="large"
+              className="avatar_left"
+              icon={<UserOutlined />}
+            />
             <div className="avatar_right">
               <h3 className="u_name">admin</h3>
               <span className="q_tips">
-                点击编辑资料 
-                 <FormOutlined className="right_icon" />
+                点击编辑资料
+                <FormOutlined className="right_icon" />
               </span>
             </div>
           </div>
@@ -60,6 +65,23 @@ function Home() {
             <PoweroffOutlined />
             <span className="tc_text">退出</span>
           </div>
+        </div>
+        <div className="top">
+          <h2 className="top_left">
+            <span className="welcome">welcome</span>
+            <span className="g">Gaem</span>管理后台
+            <a href="#">
+              <Badge count={6} size="small">
+                <Avatar shape="square" size="small" />
+              </Badge>
+            </a>
+          </h2>
+          <Search
+            className="search"
+            placeholder="请输入您需要搜索的内容"
+            onSearch={onSearch}
+            enterButton
+          />
         </div>
       </div>
     </>
