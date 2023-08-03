@@ -88,8 +88,30 @@ function Home() {
             enterButton
           />
         </div>
-        <div className="middle">
-          
+        <div className="middle"></div>
+        <div className="data">
+          <ul className="data_conter">
+            <li>
+              <h1>173746849394</h1>
+              <p>今日数据</p>
+            </li>
+            <li>
+              <h1>173746849394</h1>
+              <p>今日数据</p>
+            </li>
+            <li>
+              <h1>173746849394</h1>
+              <p>今日数据</p>
+            </li>
+            <li>
+              <h1>173746849394</h1>
+              <p>今日数据</p>
+            </li>
+            <li>
+              <h1>173746849394</h1>
+              <p>今日数据</p>
+            </li>
+          </ul>
         </div>
       </div>
     </>

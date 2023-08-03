@@ -135,9 +135,11 @@ ul {
   padding: 15px 0;
 }
 
-.top_left,.search {
+.top_left,
+.search {
   margin: 0 15px;
 }
+
 .search {
   margin-left: auto;
 }
@@ -152,4 +154,19 @@ ul {
 
 .search {
   width: 340px;
+}
+
+/* 数据展示的样式代码 */
+.data_conter {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+
+.data_conter li {
+  background-color: #fff;
+  padding: 0 25px;
+  border-radius: 15px;
+  border: #ededed 1px solid;
+
 }
