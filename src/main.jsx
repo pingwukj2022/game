@@ -12,10 +12,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Login />
   </React.StrictMode>,
-  // <React.StrictMode>
-  //   <Home/>
-  // </React.StrictMode>
-  // <React.StrictMode>
-  //   <Board />
-  // </React.StrictMode>
+
 );
